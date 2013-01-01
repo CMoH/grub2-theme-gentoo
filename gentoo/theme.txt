@@ -1,0 +1,66 @@
+#Designed for 1024x768 resolution.
+
+message-font: "Helvetica 8" terminal-font: "Fixed 9"
+message-color: "#FFF"
+message-bg-color: "#222"
+desktop-image: "gentoodark.png"
+desktop-color: "#000"
+terminal-box: "terminal_*.png"
+
++ boot_menu {
+   left = 64
+   top = 270
+   width = 100%-128
+   height = 230
+
+   icon_width = 48
+   icon_height = 48
+
+   item_font = "aqui 18"
+   item_height = 48
+   item_padding = 2
+   item_icon_space = 5
+   item_spacing = 2
+
+   item_color = "#9090FF"
+   selected_item_color = #FFF
+
+   max_items_shown = 10
+   scrollbar = false
+}
+
+#help bar at the bottom
++ label {
+   top = 100%-68
+   left = 60
+   width = 100%-120
+   height = 64
+   text = "@KEYMAP_MIDDLE@"
+   align = "center"
+   font = "DejaVu Sans Regular 10"
+   color = "#FFF"
+}
+
+
++ circular_progress
+{
+   id = "__timeout__"
+   left = 10
+   top = 270
+   width = 48
+   height = 48
+   num_ticks = 32
+   ticks_disappear = true
+   start_angle = -60
+   center_bitmap = "gentoocenter.png"
+   tick_bitmap = "tick.png"
+}
+
++ label
+{
+   id = "__timeout__"
+   position = (8, 380)
+   font = "edges 10"
+   color = #AAA
+   align = "center"
+}
