@@ -1,12 +1,10 @@
 Grub2 theme for Gentoo
 ======================
 
-Based on 
+Based on http://code.google.com/p/non7top/downloads/detail?name=gentoo.tar.bz2
 
-http://code.google.com/p/non7top/downloads/detail?name=gentoo.tar.bz2
+Ebuilds available via https://github.com/CMoH/portage-overlay
 
-Ebuilds available at
+To install, use:
 
-https://github.com/CMoH/portage-overlay
-
-
+    emerge media-gfx/grub2-theme-gentoo
